@@ -1,0 +1,29 @@
+# == Schema Information
+#
+# Table name: users
+#
+#  id             :integer          not null, primary key
+#  name           :string
+#  password       :string
+#  height         :integer
+#  login_id       :integer
+#  remember_token :string
+#  created_at     :datetime         not null
+#  updated_at     :datetime         not null
+#
+
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  password: MyString
+  height: 1
+  login_id: 1
+  remember: 
+
+two:
+  name: MyString
+  password: MyString
+  height: 1
+  login_id: 1
+  remember: 

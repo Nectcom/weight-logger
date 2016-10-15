@@ -1,0 +1,21 @@
+p#notice = notice
+
+p
+  strong Name:
+  = @user.name
+p
+  strong Password:
+  = @user.password
+p
+  strong Height:
+  = @user.height
+p
+  strong Login:
+  = @user.login_id
+p
+  strong Remember:
+  = @user.remember_token
+
+= link_to 'Edit', edit_user_path(@user)
+'|
+= link_to 'Back', users_path
