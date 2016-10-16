@@ -18,5 +18,12 @@ describe Weight do
             expect(user.weights).to eq [weight]
             expect(weight).to be_persisted  #DBに存在する
         end
+        
+        it "parent.children.build" do
+            weight = user.weights.build(weight: 67, date: Time.now)
+            
+            expect(user.weights).to eq [weight]
+            expect(weight).to_not be_persisted
+        end
     end
 end
