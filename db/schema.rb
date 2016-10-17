@@ -11,17 +11,19 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161015160549) do
+ActiveRecord::Schema.define(version: 20161017131517) do
 
   create_table "users", force: :cascade do |t|
     t.string   "name"
-    t.string   "password"
     t.integer  "height"
     t.integer  "login_id"
     t.string   "remember_token"
-    t.datetime "created_at",     null: false
-    t.datetime "updated_at",     null: false
+    t.datetime "created_at",      null: false
+    t.datetime "updated_at",      null: false
+    t.string   "password_digest"
   end
+
+  add_index "users", ["name"], name: "index_users_on_name", unique: true
 
   create_table "weights", force: :cascade do |t|
     t.integer  "user_id"

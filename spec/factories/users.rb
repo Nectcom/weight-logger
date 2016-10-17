@@ -12,13 +12,11 @@
 #  password_digest :string
 #
 
-class User < ActiveRecord::Base
-    has_many :weights
-    validates :name, presence: true, uniqueness: true
-    
-    validates :password, presence: true, length: {minimum: 6}
-    
-    validates :height, numericality: {only_integer: true}
-    
-    has_secure_password
+FactoryGirl.define do
+    factory :user do
+        name "nect"
+        password "password"
+        password_confirmation "password"
+        height 165
+    end
 end
