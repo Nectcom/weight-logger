@@ -26,6 +26,10 @@ html
             li = link_to "Graph", "#"
             li = link_to "List", "#"
             li = link_to "Profile", "#"
+            
+          .collapse.navbar-collapse.navbar-right
+            / button.btn.btn-default.navbar-btn type="button" Sign Up
+            = button_to "Sign Up", signup_path, method: :get, class: "btn btn-default navbar-btn"
     
     .container
       = yield

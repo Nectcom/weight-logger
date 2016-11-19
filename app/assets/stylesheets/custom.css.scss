@@ -102,3 +102,8 @@ input, textarea, select, .uneditable-input {
 input {
     height: auto !important;
 }
+
+.collapse.navbar-collapse.navbar-right {
+  text-align: right;
+  display: block;
+}
