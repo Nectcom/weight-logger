@@ -19,4 +19,11 @@ FactoryGirl.define do
         password_confirmation "password"
         height 165
     end
+
+    factory :invaild_user, class: User do
+        name ""
+        password "short"
+        password_confirmation "short"
+        height 165
+    end
 end

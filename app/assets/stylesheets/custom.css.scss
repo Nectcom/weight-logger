@@ -99,6 +99,11 @@ input, textarea, select, .uneditable-input {
     @include box_sizing;
 }
 
+/* form submit button */
+input#submit_button {
+  width: 100%;
+}
+
 input {
     height: auto !important;
 }

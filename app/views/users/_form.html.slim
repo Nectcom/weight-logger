@@ -1,11 +1,11 @@
   = bootstrap_form_for @user do |f|
-  
+
     = f.text_field :name
-    
+
     = f.number_field :height
-    
+
     = f.password_field :password
-    
-    = f.password_field :password_confirmation  
-      
-    = f.submit "Join Us", class: "btn btn-primary" 
+
+    = f.password_field :password_confirmation, label: "Confirm Password"
+
+    = f.submit "Join Us", class: "btn btn-primary btn-large", id: "submit_button"
